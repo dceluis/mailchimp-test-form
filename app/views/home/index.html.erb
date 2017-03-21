@@ -1,3 +1,10 @@
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+    function onSubmit(token) {
+        document.getElementById("mc-embedded-subscribe-form").submit();
+    }
+</script>
+
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -12,7 +19,7 @@
 	<input type="email" value="" name="email_address" class="email" id="mce-EMAIL" placeholder="email address" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="status" value="subscribed" tabindex="-1"></div>
-    <div class="clear"><input type="submit" id="mc-embedded-subscribe" class="button"></div>
+    <div class="clear"><input type="submit" id="mc-embedded-subscribe" class="button g-recaptcha" data-sitekey="6LeMxBkUAAAAAGklvkmniZazw41momYjvovVc8Jr" data-callback='onSubmit'></div>
     </div>
 </form>
 </div>
