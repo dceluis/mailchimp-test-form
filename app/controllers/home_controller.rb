@@ -5,7 +5,6 @@ class HomeController < ApplicationController
   def welcome
     require 'net/http'
     require 'uri'
-    console 
 
     @email_address = request.query_parameters['email_address']
     @status = request.query_parameters['status']
